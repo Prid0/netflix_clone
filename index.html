@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- google icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/png" />
+  </head>
+
+  <body>
+    <div class="main_conyainer">
+      <div class="left_con logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png"
+          alt="logo"
+        />
+      </div>
+
+      <div class="inner_container">
+        <div class="form_container">
+          <h1 class="sign_in">sign in</h1>
+          <form action="netflix.html">
+            <div class="box">
+              <input type="text" name="username" autocomplete="off" required />
+              <label for="username">Email or phone number</label>
+            </div>
+
+            <div class="box password-container">
+              <input
+                type="password"
+                name="password"
+                autocomplete="off"
+                required
+              />
+              <label for="password">Password</label>
+              <i
+                class="material-icons password-toggle"
+                onclick="togglePasswordVisibility()"
+                >visibility</i
+              >
+            </div>
+
+            <input type="submit" value="Sign in" class="sign_in_btn" />
+
+            <div class="checkbox_container">
+              <p>
+                <input type="checkbox" id="checkbox" checked />
+                <label for="checkbox">Remember me</label>
+              </p>
+              <p class="need_help">Need help?</p>
+            </div>
+
+            <div class="new_to_netflix">
+              <p>New To Netflix? <span class="s_up">Sing up now.</span></p>
+
+              <p class="bottom_para">
+                <span
+                  >Sign in is protected by Google reCAPTCHA to ensure you’re not
+                  a bot.</span
+                >
+
+                <a href="#">![CDATA[&lt;b&gt;Learn more.&lt;/b&gt;]]&gt</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_continer">
+          <p class="footer_top">Questions? Call <a>000-800-919-1694</a></p>
+          <ul class="footer_grid">
+            <li class="footer_item">FAQ</li>
+            <li class="footer_item">Help Centre</li>
+            <li class="footer_item">Terms of Use</li>
+            <li class="footer_item">Privacy</li>
+            <li class="footer_item">Cookie Preferences</li>
+            <li class="footer_item">Corporate Information</li>
+          </ul>
+          <div class="language_container">
+            <button class="langauge_btn">
+              <label for="select_lmg"
+                ><span class="material-symbols-outlined">
+                  language
+                </span></label
+              >
+              <select class="lang_selector" id="select_lmg">
+                <option>English</option>
+                <option>हिन्दी</option>
+              </select>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ------script------ -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
